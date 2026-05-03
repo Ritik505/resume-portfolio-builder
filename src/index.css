@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Mobile-first responsive base styles */
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Touch-friendly sizing */
+  @media (max-width: 640px) {
+    button, input, textarea, select {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  /* Improve text readability on mobile */
+  @media (max-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Mobile-specific utilities */
+  @media (max-width: 640px) {
+    .safe-area {
+      padding-left: max(1rem, env(safe-area-inset-left));
+      padding-right: max(1rem, env(safe-area-inset-right));
+      padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    }
+  }
+
+  /* Responsive grid helpers */
+  .responsive-grid {
+    @apply grid gap-3 sm:gap-4 md:gap-6;
+  }
+
+  /* Touch-friendly spacing */
+  .touch-target {
+    @apply p-3 sm:p-4 min-h-[44px] flex items-center justify-center;
+  }
+}
