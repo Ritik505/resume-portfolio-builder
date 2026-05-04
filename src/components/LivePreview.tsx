@@ -78,7 +78,7 @@ export default function LivePreview() {
       <div className="relative flex-1 overflow-hidden rounded-xl sm:rounded-2xl border border-slate-200 bg-slate-200 shadow-inner">
         <div 
           className={`mx-auto h-full transition-all duration-300 ${
-            view === 'mobile' ? 'w-full sm:max-w-[600px]' : 'max-w-full'
+            view === 'mobile' ? 'w-full sm:max-w-[1000px]' : 'max-w-full'
           }`}
         >
           <iframe
