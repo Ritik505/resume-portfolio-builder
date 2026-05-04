@@ -10,8 +10,7 @@ export default function Navbar() {
           <div className="flex h-8 sm:h-10 w-8 sm:w-10 items-center justify-center rounded-lg sm:rounded-xl bg-gradient-to-br from-indigo-600 to-blue-600 shadow-lg shadow-indigo-200 flex-shrink-0">
             <FileUser className="h-5 sm:h-6 w-5 sm:w-6 text-white" />
           </div>
-          <span className="hidden sm:inline text-lg sm:text-2xl font-black bg-gradient-to-r from-slate-900 to-slate-600 bg-clip-text text-transparent truncate">Resume Portfolio Builder</span>
-          <span className="sm:hidden text-sm font-bold bg-gradient-to-r from-slate-900 to-slate-600 bg-clip-text text-transparent">Builder</span>
+          <span className="text-xs sm:text-lg sm:text-2xl font-black bg-gradient-to-r from-slate-900 to-slate-600 bg-clip-text text-transparent truncate">Resume Portfolio Builder</span>
         </Link>
         <div className="flex items-center gap-2 sm:gap-4">
           <Link
