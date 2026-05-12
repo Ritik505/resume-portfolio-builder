@@ -30,19 +30,19 @@ export default function Footer() {
               <span className="text-black font-medium">Ritik Verma</span>. All rights reserved.
             </p>
 
-            {/*
+            
             <div className="flex items-center gap-4">
-              <a href="#" className="text-slate-400 hover:text-blue-600 transition">
+              <a href="https://www.linkedin.com/in/ritik-verma-10b446326" className="text-slate-400 hover:text-blue-600 transition">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-blue-600 transition">
+              <a href="https://github.com/Ritik505" className="text-slate-400 hover:text-blue-600 transition">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-blue-600 transition">
+              <a href="mailto:rv.coder55555@gmail.com" className="text-slate-400 hover:text-blue-600 transition">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
-              */}
+              
 
           </div>
         </div>
